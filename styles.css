@@ -512,3 +512,10 @@ h1 em { font-style: italic; color: var(--terra); }
     gap: 1.5rem;
   }
 }
+
+.map-wrap--full { min-height: 320px; margin-top: clamp(32px, 5vw, 48px); }
+.map-wrap--full iframe { min-height: 320px; }
+#contato .section__split { align-items: start; }
+#contato .section__split > .reveal:first-child { padding-top: 40px; }
+
+.contact-list__icon { font-size: 1.2rem; color: var(--green-700); }
