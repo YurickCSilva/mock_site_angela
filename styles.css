@@ -191,16 +191,25 @@ h1 em { font-style: italic; color: var(--terra); }
 .timeline::before {
   content: "";
   position: absolute;
-  left: calc(var(--tl-pad) + var(--tl-colw) + var(--tl-gap) / 2);
+  left: calc(var(--tl-pad) + var(--tl-colw) + var(--tl-gap) / 2 + 1.5px);
   top: 8px; bottom: 8px; width: 2px; background: var(--sand-200);
 }
-.timeline li { position: relative; display: grid; grid-template-columns: var(--tl-colw) 1fr; gap: var(--tl-gap); padding: 14px 0; }
+.timeline li {
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--tl-colw) 1fr;
+  gap: var(--tl-gap);
+  padding: 14px 0;
+  align-items: center;
+}
 .timeline__year { font-family: var(--font-head); font-weight: 600; color: var(--terra); font-size: 1.05rem; text-align: right; }
 .timeline li::before {
   content: "";
   position: absolute;
   left: calc(var(--tl-colw) + var(--tl-gap) / 2 - var(--tl-dot) / 2);
-  top: 22px; width: var(--tl-dot); height: var(--tl-dot); border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: var(--tl-dot); height: var(--tl-dot); border-radius: 50%;
   background: var(--white); border: 3px solid var(--green-500); z-index: 1;
 }
 .timeline li div { padding-left: 4px; }
