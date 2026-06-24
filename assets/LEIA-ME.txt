@@ -1,0 +1,15 @@
+FOTO DA ÂNGELA
+==============
+
+Para exibir a foto no topo do site (hero), coloque o arquivo da foto
+nesta pasta com o nome exato:
+
+    angela.jpg
+
+Recomendações:
+- Formato: JPG (ou troque a extensão no index.html para .png/.webp)
+- Proporção próxima de 4x5 (retrato), ex: 800x1000 px
+- Boa iluminação, fundo neutro
+
+Enquanto o arquivo não existir, o site mostra automaticamente um
+espaço decorativo no lugar — nada quebra.
